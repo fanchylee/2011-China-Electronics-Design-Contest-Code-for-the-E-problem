@@ -1,0 +1,4 @@
+# Output products list for <dcm>
+dcm_flist.txt
+dcm_readme.txt
+dcm_xmdf.tcl

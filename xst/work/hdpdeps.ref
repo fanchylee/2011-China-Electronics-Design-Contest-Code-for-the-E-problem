@@ -1,0 +1,7 @@
+V3 3
+FL /home/li3939108/Xilinx/control_3/mdecoder.vhd 2011/08/31.21:17:46 M.70d
+EN work/mydecoder 1314955645 FL /home/li3939108/Xilinx/control_3/mdecoder.vhd \
+      PB ieee/std_logic_1164 1284609568 PB ieee/std_logic_arith 1284609569 \
+      PB ieee/STD_LOGIC_UNSIGNED 1284609570
+AR work/mydecoder/Behavioral 1314955646 \
+      FL /home/li3939108/Xilinx/control_3/mdecoder.vhd EN work/mydecoder 1314955645

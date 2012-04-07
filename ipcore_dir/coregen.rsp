@@ -1,0 +1,2 @@
+SETPROJECT "/home/li3939108/Xilinx/control_2/ipcore_dir/coregen.cgp"
+LAUNCHXCO "/home/li3939108/Xilinx/control_2/ipcore_dir/chipscope_vio.xco"

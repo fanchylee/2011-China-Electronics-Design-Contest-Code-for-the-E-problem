@@ -1,0 +1,77 @@
+@P:  Worst Slack : -2.718
+@P:  keyboard|keytrig_inferred_clock - Estimated Frequency : 83.5 MHz
+@P:  keyboard|keytrig_inferred_clock - Requested Frequency : 152.8 MHz
+@P:  keyboard|keytrig_inferred_clock - Estimated Period : 11.981
+@P:  keyboard|keytrig_inferred_clock - Requested Period : 6.545
+@P:  keyboard|keytrig_inferred_clock - Slack : -2.718
+@P:  main|clk_10m_inferred_clock - Estimated Frequency : 333.3 MHz
+@P:  main|clk_10m_inferred_clock - Requested Frequency : 392.1 MHz
+@P:  main|clk_10m_inferred_clock - Estimated Period : 3.001
+@P:  main|clk_10m_inferred_clock - Requested Period : 2.550
+@P:  main|clk_10m_inferred_clock - Slack : -0.450
+@P:  main|clk_20m_inferred_clock - Estimated Frequency : 1.2 MHz
+@P:  main|clk_20m_inferred_clock - Requested Frequency : 1.2 MHz
+@P:  main|clk_20m_inferred_clock - Estimated Period : 844.611
+@P:  main|clk_20m_inferred_clock - Requested Period : 846.770
+@P:  main|clk_20m_inferred_clock - Slack : 2.159
+@P:  main|clk_k_inferred_clock[0] - Estimated Frequency : 384.2 MHz
+@P:  main|clk_k_inferred_clock[0] - Requested Frequency : 452.0 MHz
+@P:  main|clk_k_inferred_clock[0] - Estimated Period : 2.603
+@P:  main|clk_k_inferred_clock[0] - Requested Period : 2.213
+@P:  main|clk_k_inferred_clock[0] - Slack : -0.390
+@P:  main|clk_k_inferred_clock[2] - Estimated Frequency : 384.2 MHz
+@P:  main|clk_k_inferred_clock[2] - Requested Frequency : 452.0 MHz
+@P:  main|clk_k_inferred_clock[2] - Estimated Period : 2.603
+@P:  main|clk_k_inferred_clock[2] - Requested Period : 2.213
+@P:  main|clk_k_inferred_clock[2] - Slack : -0.390
+@P:  main|clk_k_inferred_clock[4] - Estimated Frequency : 384.2 MHz
+@P:  main|clk_k_inferred_clock[4] - Requested Frequency : 452.0 MHz
+@P:  main|clk_k_inferred_clock[4] - Estimated Period : 2.603
+@P:  main|clk_k_inferred_clock[4] - Requested Period : 2.213
+@P:  main|clk_k_inferred_clock[4] - Slack : -0.390
+@P:  main|clk_k_inferred_clock[5] - Estimated Frequency : 146.3 MHz
+@P:  main|clk_k_inferred_clock[5] - Requested Frequency : 172.1 MHz
+@P:  main|clk_k_inferred_clock[5] - Estimated Period : 6.835
+@P:  main|clk_k_inferred_clock[5] - Requested Period : 5.810
+@P:  main|clk_k_inferred_clock[5] - Slack : -1.025
+@P:  main|clk_k_inferred_clock[6] - Estimated Frequency : 384.2 MHz
+@P:  main|clk_k_inferred_clock[6] - Requested Frequency : 452.0 MHz
+@P:  main|clk_k_inferred_clock[6] - Estimated Period : 2.603
+@P:  main|clk_k_inferred_clock[6] - Requested Period : 2.213
+@P:  main|clk_k_inferred_clock[6] - Slack : -0.390
+@P:  main|clk_k_inferred_clock[8] - Estimated Frequency : 384.2 MHz
+@P:  main|clk_k_inferred_clock[8] - Requested Frequency : 452.0 MHz
+@P:  main|clk_k_inferred_clock[8] - Estimated Period : 2.603
+@P:  main|clk_k_inferred_clock[8] - Requested Period : 2.213
+@P:  main|clk_k_inferred_clock[8] - Slack : -0.390
+@P:  main|dcm_70m.CLK0_BUF_derived_clock - Estimated Frequency : 141.4 MHz
+@P:  main|dcm_70m.CLK0_BUF_derived_clock - Requested Frequency : 160.9 MHz
+@P:  main|dcm_70m.CLK0_BUF_derived_clock - Estimated Period : 7.071
+@P:  main|dcm_70m.CLK0_BUF_derived_clock - Requested Period : 6.215
+@P:  main|dcm_70m.CLK0_BUF_derived_clock - Slack : -0.855
+@P:  main|dcm_70m.CLKFX_BUF_derived_clock - Estimated Frequency : 213.0 MHz
+@P:  main|dcm_70m.CLKFX_BUF_derived_clock - Requested Frequency : 160.9 MHz
+@P:  main|dcm_70m.CLKFX_BUF_derived_clock - Estimated Period : 4.696
+@P:  main|dcm_70m.CLKFX_BUF_derived_clock - Requested Period : 6.215
+@P:  main|dcm_70m.CLKFX_BUF_derived_clock - Slack : 1.520
+@P:  main|dcm_80m.CLKFX_BUF_derived_clock - Estimated Frequency : 213.0 MHz
+@P:  main|dcm_80m.CLKFX_BUF_derived_clock - Requested Frequency : 160.9 MHz
+@P:  main|dcm_80m.CLKFX_BUF_derived_clock - Estimated Period : 4.696
+@P:  main|dcm_80m.CLKFX_BUF_derived_clock - Requested Period : 6.215
+@P:  main|dcm_80m.CLKFX_BUF_derived_clock - Slack : 1.520
+@P:  main|dcm_90m.CLKFX_BUF_derived_clock - Estimated Frequency : 212.7 MHz
+@P:  main|dcm_90m.CLKFX_BUF_derived_clock - Requested Frequency : 160.9 MHz
+@P:  main|dcm_90m.CLKFX_BUF_derived_clock - Estimated Period : 4.700
+@P:  main|dcm_90m.CLKFX_BUF_derived_clock - Requested Period : 6.215
+@P:  main|dcm_90m.CLKFX_BUF_derived_clock - Slack : 1.515
+@P:  System - Estimated Frequency : 81.2 MHz
+@P:  System - Requested Frequency : 93.7 MHz
+@P:  System - Estimated Period : 12.312
+@P:  System - Requested Period : 10.671
+@P:  System - Slack : -1.642
+@P: main Part : xc3s500epq208-5
+@P: main I/O primitives : 36
+@P: main I/O Register bits : 1
+@P: main Register bits (Non I/O) : 327 (3%)
+@P: main Total Luts : 1234 (13%)
+@P:  CPU Time : 0h:00m:44s

@@ -1,0 +1,201 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    11:50:52 08/25/2011 
+// Design Name: 
+// Module Name:    keyboard 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module keyboard(
+	col,
+
+	clk,
+	rst_n,
+	row
+	);
+
+
+output	reg	[3:0]	col =0; //4列
+
+input			clk;
+input			rst_n;
+input		[3:0] 	row; //4行
+	wire	[7:0]	data;
+	wire	[7:0]	colrow;
+	reg	[4:0] 	state=0;
+	reg	[7:0] 	key_data_buf=0,key_data=0;
+	reg	[1:0] 	delay=0;
+	reg		clk_20ms=0; //周期为20ms的高脉冲
+	reg 	[19:0]	clk_20ms_r=0; //用于计数的寄存器
+	parameter	clk_20ms_par = 500000; //延时20ms所需要的计数次数, 20MHz
+	parameter 	coln = 5'b00_001,
+			col0 = 5'b00_010,
+			col1 = 5'b00_100,
+			col2 = 5'b01_000,
+			col3 = 5'b10_000;
+
+assign data= key_data; //
+assign colrow = {col[3:0],row[3:0]}; //将行值和列值输出
+//一下always语句用于产生一个周期为20ms的高脉冲clk_20ms
+always@(posedge clk,negedge rst_n) begin
+	if(!rst_n) begin
+		clk_20ms_r = 20'b0;
+	end else begin 
+		if(clk_20ms_r <= clk_20ms_par ) 
+			clk_20ms_r = clk_20ms_r+1'b1;
+		else
+			clk_20ms_r = 0 ;
+		if(clk_20ms_r >= clk_20ms_par ) begin
+			clk_20ms = 1'b1;
+/*			if(clk_20ms_r == clk_20ms_par + 500) 
+				clk_20ms_r = 0 ;
+*/
+	 	end else begin
+			clk_20ms = 1'b0;
+		end
+
+	end
+end 
+ 
+always@(posedge clk,negedge rst_n) begin
+	 if(!rst_n) begin//复位时对寄存器赋予初值 
+		  delay = 2'b0;
+		  col = 4'hf;
+		  state = coln;
+	 end else begin
+		case(state)
+		coln: state = col0;
+		col0: begin//col1，col2等与此类同，略去
+			delay = 2'b0;
+			col = 4'b1110; //第一行输出低电平，其他全部输出为高电平
+			key_data_buf = colrow; //寄存键值
+			if(clk_20ms)
+				delay = delay+1'b1;
+			if(delay == 2'b01) begin//产生20ms（用于消抖）的延时后进入此if语句
+				if(key_data_buf == colrow) begin//与之前的值相同，则将当前键值锁存，同时状态转移
+					key_data = key_data_buf; //将得到的值存入key_data
+					state = col1;
+				end else begin
+					state = coln; //返回到初始状态
+				end
+			end
+		end
+		col1: begin
+			col = 4'b1101; //第二行输出低电平，其他全部输出为高电平
+			key_data_buf = colrow;
+			if(clk_20ms) 
+				delay = delay+1'b1;
+			else
+				delay = 2'b0;
+				
+			if(delay == 2'b01) begin
+				if(key_data_buf == colrow) begin
+					key_data = key_data_buf;
+					state = col2;
+				end else begin
+					state = coln;
+				end
+			end
+		end
+		col2: begin
+			col = 4'b1011;
+			key_data_buf = colrow;
+			if(clk_20ms)
+				delay = delay+1'b1;
+			else
+				delay = 2'b0;
+				
+			if(delay == 2'b01) begin
+				if(key_data_buf == colrow) begin
+					key_data = key_data_buf;
+					state = col3;
+				end else begin
+					state = coln;
+				end
+			end
+		end
+		col3: begin
+			col = 4'b0111;
+			key_data_buf = colrow;
+			if(clk_20ms)
+				delay = delay+1'b1;
+			else
+				delay = 2'b0;
+
+			if(delay == 2'b01) begin
+				if(key_data_buf == colrow) begin
+					key_data = key_data_buf;
+					state = col0;
+				end else begin
+					state = coln;
+				end
+			end
+		end
+		default: begin 
+			state = coln; //缺省值出口，防止程序“跑飞”
+		end
+		endcase
+	end
+end
+ 
+/*数码管显示部分，不需要，注掉
+//0x03, 0x9f, 0x25, 0x0d, 0x99, 0x49, 0x41, 0x1f, 0x01, 0x09,0xFF,0x00
+// 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ,全灭 , 全亮
+parameter		dis_0 = 8'h03, //显示 0
+			dis_1 = 8'h9f, // 1
+			dis_2 = 8'h25, // 2
+			dis_3 = 8'h0d, // 3
+			dis_4 = 8'h99, // 4
+			dis_5 = 8'h49, // 5
+			dis_6 = 8'h41, // 6
+			dis_7 = 8'h1f, // 7
+			dis_8 = 8'h01, // 8
+			dis_9 = 8'h09, // 9
+			dis_a = 8'h11, // a
+			dis_b = 8'hc1, // b
+			dis_c = 8'h63, // c
+			dis_d = 8'h85, // d
+			dis_e = 8'h61, // e
+			dis_f = 8'h71, // f
+			dis_k = 8'hff,//light all off
+			dis_l = 8'h00;//light all on
+always@(posedge clk,negedge rst_n) begin
+	if(!rst_n) begin
+		seg_data <= dis_k;
+	end else begin
+		case(data)
+		8'b1110_1110: seg_data <= dis_0; //扫描到第一行第一列
+		8'b1110_1101: seg_data <= dis_1; //扫描到第一行第二列
+		8'b1110_1011: seg_data <= dis_2; //……
+		8'b1110_0111: seg_data <= dis_3;
+		8'b1101_1110: seg_data <= dis_4;
+		8'b1101_1101: seg_data <= dis_5;
+		8'b1101_1011: seg_data <= dis_6;
+		8'b1101_0111: seg_data <= dis_7;
+		8'b1011_1110: seg_data <= dis_8;
+		8'b1011_1101: seg_data <= dis_9;
+		8'b1011_1011: seg_data <= dis_a;
+		8'b1011_0111: seg_data <= dis_b;
+		8'b0111_1110: seg_data <= dis_c;
+		8'b0111_1101: seg_data <= dis_d;
+		8'b0111_1011: seg_data <= dis_e;
+		8'b0111_0111: seg_data <= dis_f;
+		8'b1111_1111: seg_data <= dis_k;
+		default: ;
+		endcase
+	end
+end
+*/
+endmodule

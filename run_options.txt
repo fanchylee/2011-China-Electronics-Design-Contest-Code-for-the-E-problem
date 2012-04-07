@@ -1,0 +1,78 @@
+#-- Synopsys, Inc.
+#-- Version 9.6.2
+#-- Project file C:\Work\workspace\Xilinx\control_3\control_3\run_options.txt
+#-- Written on Fri Sep 02 15:49:46 2011
+
+
+#add_file options
+add_file -verilog "D:/Synplicity/fpga_962/bin/../lib/xilinx/unisim.v"
+add_file -verilog "./signal_m.v"
+add_file -verilog "./noise_m.v"
+add_file -vhdl -lib work "./mdecoder.vhd"
+add_file -verilog "./keyboard.v"
+add_file -verilog "./dcm_90m.v"
+add_file -verilog "./dcm_80m.v"
+add_file -verilog "./dcm_70m.v"
+add_file -verilog "./dis_state.v"
+add_file -verilog "./dis_ram_wrapper.v"
+add_file -verilog "./bin2bcd.v"
+add_file -verilog "./main.v"
+add_file -constraint "C:/Work/workspace/Xilinx/control_3/control_3/main.sdc"
+
+
+#implementation: "control_3"
+impl -add control_3 -type fpga
+
+#device options
+set_option -technology SPARTAN3E
+set_option -part xc3s500e
+set_option -package pq208
+set_option -speed_grade -5
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -default_enum_encoding default
+set_option -resource_sharing 1
+set_option -use_fsm_explorer 0
+set_option -top_module "main"
+
+#map options
+set_option -frequency auto
+set_option -vendor_xcompatible_mode 0
+set_option -vendor_xcompatible_mode 0
+set_option -run_prop_extract 1
+set_option -fanout_limit 100
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -verification_mode 0
+set_option -no_sequential_opt 0
+set_option -fixgatedclocks 3
+set_option -fixgeneratedclocks 3
+
+
+#sequential_optimizations options
+set_option -symbolic_fsm_compiler 1
+
+#simulation options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+#VIF options
+set_option -write_vif 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./main.edn"
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -num_critical_paths 0
+set_option -num_startend_points 0
+set_option -compiler_compatible 1
+impl -active "control_3"

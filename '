@@ -1,0 +1,201 @@
+module dis_state(
+display_reg,
+zero_shit
+,
+clk_50m,
+display_clk,
+clk_point ,
+state
+);
+
+parameter	POINT_FLASH_LENGTH=500 ;
+
+output	reg	[15:0]	display_reg ;
+output	reg	[3:0]	zero_shit ;
+
+input	wire		display_clk ;
+input	wire		clk_point ;
+input	wire		clk_50m ;
+input	wire	[7:0]	state ;
+
+	reg	[7:0]	counter ;
+	reg	[7:0]	last_state ;
+	reg	[7:0]	point [2:0] ;
+
+	wire		reset_bin2bcd , en_bin2bcd ;
+	wire	[31:0]	in_bin2bcd ;
+	wire	[39:0]	out_bin2bcd ;
+
+//show pre zeros or not 
+parameter	zero2space=4'b1 ;
+parameter	zero_delete=4'b0010 ;
+
+//state parameters
+parameter	init=0 ;
+parameter	gdram_initializing = 1 ;	
+parameter	keyboard_test = 2 ;
+parameter	none=3 ;
+
+bin2bcd	bin2bcd_converter(	.RESET(reset_bin2bcd),
+				.ENABLE(en_bin2bcd),
+				.BIN(in_bin2bcd),
+				.CLK(clk_50m),
+				.BCD_o(out_bin2bcd));
+fifo	dis_fifo(	.rst(rst),
+.wr_clk(wr_clk),
+.rd_clk(rd_clk),
+.din(din), // Bus [7 : 0] 
+.wr_en(wr_en),
+.rd_en(rd_en),
+.dout(dout), // Bus [7 : 0] 
+.full(full),
+.overflow(overflow),
+.empty(empty),
+.underflow(underflow));
+
+always @(posedge clk_point) begin
+	case(state)
+	keyboard_test:	begin
+				point[2] <= point[0] ;
+				point[1] <= point[2] ;
+				point[0] <= point[1] ;
+			end
+	none:		begin
+				point[2] <= point[0] ;	
+				point[1] <= point[2] ;
+				point[0] <= point[1] ;
+			end
+	default:	begin
+			point[2] <= "." ;
+			point[1] <= " " ;
+			point[0] <= " " ;
+			end
+	endcase
+end
+
+
+always @(negedge display_clk) begin
+	last_state <= state ;
+	case(state)
+	keyboard_test:	
+	begin
+		if(last_state == keyboard_test )
+			counter <= counter + 1 ;
+		else
+			counter <= 0 ;
+		case(counter)
+		1:	
+		begin
+			en_bin2bcd <= 1 ;	
+			reset_bin2bcd <=0 ;
+			zero_shit <= zero2space ;
+		end
+		2: 	
+		begin
+			reset_bin2bcd <= 1 ;
+		end
+		3: 	
+		begin
+			reset_bin2bcd <= 0 ;
+			in_bin2bcd <= {27'b0 , counter_3} ;
+                end
+
+		4:      display_reg <= {8'd0,8'h98} ;
+		5:      display_reg <= {8'd0,8'h98} ;
+		6:      display_reg <= {12'b0000_0001_0000 , out_bin2bcd[39:36]} + "0" ;
+		7:      display_reg <= {15'b0000_0001_0000_000 ,keycode_buf[3]} + "0" ;//out_bin2bcd[35:32]} + "0" ;
+		8:      display_reg <= {15'b0000_0001_0000_000 ,keycode_buf[2]} + "0" ;//out_bin2bcd[31:28]} + "0" ;		
+		9:      display_reg <= {15'b0000_0001_0000_000 ,keycode_buf[1]} + "0" ;//out_bin2bcd[27:24]} + "0" ;		
+		10:     display_reg <= {15'b0000_0001_0000_000, keycode_buf[0]} + "0";//{12'b0000_0001_0000 , out_bin2bcd[23:20]} + "0" ;
+		11:	display_reg <= {12'b0000_0001_0000 , out_bin2bcd[19:16]} + "0" ;		
+		12:	display_reg <= {12'b0000_0001_0000 , out_bin2bcd[15:12]} + "0" ;	
+		13:	display_reg <= {12'b0000_0001_0000 , out_bin2bcd[11:8]} + "0" ;
+		14:	display_reg <= {12'b0000_0101_0000 , out_bin2bcd[7:4]} + "0" ;
+		15:	display_reg <= {12'b0000_0001_0000 , out_bin2bcd[3:0]} + "0" ;
+		16:	display_reg <= {8'd0,8'h88} ;
+		17:	display_reg <= {8'd0,8'h88} ;
+		18:	display_reg <= {8'b1,"k"} ;
+		19:	display_reg <= {8'b1,"e"} ;
+		20:	display_reg <= {8'b1,"y"} ;
+		21:	display_reg <= {8'b1," "} ;
+		22:	display_reg <= {8'b1,"t"} ;
+		23:	display_reg <= {8'b1,"e"} ;
+		24:	display_reg <= {8'b1,"s"} ;
+		25:	display_reg <= {8'b1,"t"} ;
+		26:	display_reg <= {8'b1,"i"} ;
+		27:	display_reg <= {8'b1,"n"} ;
+		28:	display_reg <= {8'b0000_1001,"g"} ;
+		29:	display_reg <= {8'b1,point[2]} ;
+		30:	display_reg <= {8'b1,point[1]} ;
+        	31:	display_reg <= {8'b1,point[0]} ;
+		32:	display_reg <= {8'b1 , " "} ;	
+		33:	display_reg <= {8'b1 , " "} ;			
+		default:
+		begin
+			en_bin2bcd <= 0;
+			in_bin2bcd <= 0;
+			display_reg <= 15'b0 ;
+		end
+		endcase
+	end
+	none:
+	begin
+		if(last_state == none) 
+			counter <= counter + 1 ;
+		else
+			counter <= 0 ;
+		case(counter)
+		1:	
+		begin
+			display_reg <= {8'b0 , 8'h88} ;
+			zero_shit <= zero2space ;
+		end
+		2:	display_reg <= {8'b0 , 8'h88} ;			
+		3:	display_reg <= {8'b1 , " "} ;
+		4:	display_reg <= {8'b1 , " "} ;
+		5:	display_reg <= {8'b1 , " "} ;
+		6:	display_reg <= {8'b1 , " "} ;	
+		7:	display_reg <= {8'b1 , " "} ;
+		8:	display_reg <= {8'b1 , "I"} ;
+		9:	display_reg <= {8'b1 , "D"} ;
+		10:	display_reg <= {8'b1 , "L"} ;
+		11:	display_reg <= {8'b0000_1001 , "E"} ;
+		12:	display_reg <= {8'b1,point[2]} ;
+		13:	display_reg <= {8'b1,point[1]} ;
+		14:	display_reg <= {8'b1,point[0]} ;
+		15:	display_reg <= {8'b1 , " "} ;
+		16:	display_reg <= {8'b1 , " "} ;	
+		17:	display_reg <= {8'b1 , " "} ;	
+		18:	display_reg <= {8'b1 , " "} ;		
+		19:	display_reg <= {8'b0 , 8'h98} ;			
+		20:	display_reg <= {8'b0 , 8'h98} ;		
+		21:	display_reg <= {8'b1 , " "} ;
+		22:	display_reg <= {8'b1 , " "} ;
+		23:	display_reg <= {8'b1 , " "} ;		
+		24:	display_reg <= {8'b1 , " "} ;
+		25:	display_reg <= {8'b1 , " "} ;
+		26:	display_reg <= {8'b1 , " "} ;
+		27:	display_reg <= {8'b1 , " "} ;
+		28:	display_reg <= {8'b1 , " "} ;
+		29:	display_reg <= {8'b1 , " "} ;
+		30:	display_reg <= {8'b1 , " "} ;
+		31:	display_reg <= {8'b1 , " "} ;
+		32:	display_reg <= {8'b1 , " "} ;
+		33:	display_reg <= {8'b1 , " "} ;
+		34:	display_reg <= {8'b1 , " "} ;
+		35:	display_reg <= {8'b1 , " "} ;
+		36:	display_reg <= {8'b1 , " "} ;
+		default:
+		begin
+			display_reg <= 15'b0 ;
+		end
+		endcase
+	end
+	default:
+	begin
+		display_reg <= 15'b0 ;
+		counter <= 0 ;
+	end
+	endcase
+end
+endmodule

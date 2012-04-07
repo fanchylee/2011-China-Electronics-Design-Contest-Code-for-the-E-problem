@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/li3939108/Xilinx/control_final/impact.xsl
+OUTFILE=/home/li3939108/Xilinx/control_final/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/li3939108/Xilinx/control_final
+LICENSE=iMPACT
+USER_INFO=iMPACT

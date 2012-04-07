@@ -1,0 +1,41 @@
+License checkout: synplifypro
+
+
+Starting:    D:\Synplicity\fpga_962\bin\mbin\synbatch.exe
+Install:     D:\Synplicity\fpga_962
+Date:        Fri Sep 02 15:49:46 2011
+Version:     9.6.2
+
+
+Arguments:   -product synplify_pro main.prj -tcl main_map.tcl -batch 
+ProductType: synplify_pro
+
+License checkout: synplifypro
+License: synplifypro node-locked 
+Running in Vendor Mode
+
+
+
+Running synthesis on main:control_3
+log file: "C:\Work\workspace\Xilinx\control_3\control_3\main.srr"
+
+Running HDL Compiler...
+HDL Compiler Completed
+Return Code: 0
+
+Running Analysis Property Generator...
+Launching mapper in pro mode
+Analysis Property Generator Completed
+Return Code: 0
+
+Analysis Property Generator Complete
+Running SPARTAN3E Mapper...
+Launching mapper in pro mode
+SPARTAN3E Mapper Completed with warnings
+Return Code: 1
+
+TCL script complete: "main_map.tcl"
+
+exit status=0
+
+

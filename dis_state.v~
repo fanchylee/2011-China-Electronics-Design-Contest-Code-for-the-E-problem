@@ -1,0 +1,211 @@
+module dis_state(
+display_reg,
+clk_w,
+mode,
+rst_w,
+done_w,
+en_w
+,
+clk_50m,
+display_clk,
+clk_point ,
+addr_db,
+state,
+pbus
+
+);
+
+
+output	reg	[15:0]	display_reg = 0;
+output	reg	[7:0]	mode = 0 ;
+output	wire		clk_w ;
+output	reg		rst_w ;
+output	reg		en_w ;
+
+input	wire		display_clk ;
+input	wire		clk_point ;
+input	wire		clk_50m ;
+input	wire	[7:0]	state ;
+input	wire		done_w ;
+
+input	wire	[9:0]	addr_db;
+input	wire	[127:0]	pbus ;
+
+
+	reg	[7:0]	counter ;
+	reg	[7:0]	last_state ;
+	reg	[7:0]	point [3:0] ;
+
+	
+
+//show pre zeros or not 
+parameter	zero2space=4'b1 ;
+parameter	zero_delete=4'b0010 ;
+
+`include "state.v"
+
+//dis mode 
+parameter	dd=4'b0000 ;
+parameter	gd=4'b0001 ;
+/*
+bin2bcd	bin2bcd_converter(	.RESET(reset_bin2bcd),
+				.ENABLE(en_bin2bcd),
+				.BIN(in_bin2bcd),
+				.CLK(clk_50m),
+				.BCD_o(out_bin2bcd));
+*/
+
+assign	clk_w=clk_50m ;
+always @(posedge clk_point) begin
+	case(state)
+	keyboard_test:	begin
+				point[2] <= point[0] ;
+				point[1] <= point[2] ;
+				point[0] <= point[1] ;
+			end
+	freq_sig:	begin
+				if(pbus[13]) begin
+					point[2] <= point[0] ;
+					point[1] <= point[2] ;
+					point[0] <= point[1] ;
+				end
+			end
+	none:		begin
+				point[2] <= point[0] ;
+				point[1] <= point[2] ;
+				point[0] <= point[1] ;
+			end
+	default:	begin
+			point[2] <= "." ;
+			point[1] <= " " ;
+			point[0] <= " " ;
+			end
+	endcase
+end
+
+always @(negedge clk_w) begin
+	last_state <= state ;
+	case(state)
+	keyboard_test:	
+	begin
+		if(done_w == 1 ) begin
+			rst_w <= 1 ;
+		end else begin
+			rst_w <= 0 ;
+		end
+		case(addr_db)
+		{6'd3,4'd1  }:begin display_reg <= {15'b0000_0001_0000_000 ,pbus[43]} + "0" ;       en_w <= 1 ;end
+		{6'd3,4'd2  }:begin display_reg <= {15'b0000_0001_0000_000 ,pbus[42]} + "0" ;       en_w <= 1 ;end
+		{6'd3,4'd3  }:begin display_reg <= {15'b0000_0001_0000_000 ,pbus[41]} + "0" ;       en_w <= 1 ;end
+		{6'd3,4'd4  }:begin display_reg <= {15'b0000_0001_0000_000, pbus[40]} + "0";        en_w <= 1 ;end
+		{6'd3,4'd5  }:begin display_reg <= {12'b0000_0001_0000 , pbus[39:36]} + "0" ;       en_w <= 1 ;end
+		{6'd3,4'd6  }:begin display_reg <= {12'b0000_0001_0000 , pbus[19:16]} + "0" ;	    en_w <= 1 ;end    
+		{6'd3,4'd7  }:begin display_reg <= {12'b0000_0001_0000 , pbus[15:12]} + "0" ;	    en_w <= 1 ;end
+		{6'd3,4'd8  }:begin display_reg <= {12'b0000_0001_0000 , pbus[11:8]} + "0" ;        en_w <= 1 ;end
+		{6'd3,4'd9  }:begin display_reg <= {12'b0000_0101_0000 , pbus[7:4]} + "0" ;         en_w <= 1 ;end
+		{6'd3,4'd10 }:begin display_reg <= {12'b0000_0001_0000 , pbus[3:0]} + "0" ;         en_w <= 1 ;end
+		{6'd1,4'd0  }:begin display_reg <= {8'b1," "} ;                                     en_w <= 1 ;end
+		{6'd1,4'd1  }:begin display_reg <= {8'b1," "} ;                                     en_w <= 1 ;end
+		{6'd1,4'd2  }:begin display_reg <= {8'b1,"k"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd3  }:begin display_reg <= {8'b1,"e"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd4  }:begin display_reg <= {8'b1,"y"} ;                                     en_w <= 1 ;end 
+		{6'd1,4'd5  }:begin display_reg <= {8'b1,"t"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd6  }:begin display_reg <= {8'b1,"e"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd7  }:begin display_reg <= {8'b1,"s"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd8  }:begin display_reg <= {8'b1,"t"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd9  }:begin display_reg <= {8'b1,"i"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd10 }:begin display_reg <= {8'b1,"n"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd11 }:begin display_reg <= {8'b0000_1001,"g"} ;                             en_w <= 1 ;end
+		{6'd1,4'd12 }:begin display_reg <= {8'b1,point[2]} ;                                en_w <= 1 ;end     
+                {6'd1,4'd13 }:begin display_reg <= {8'b1,point[1]} ;                                en_w <= 1 ;end
+                {6'd1,4'd14 }:begin display_reg <= {8'b1,point[0]} ;                                en_w <= 1 ;end
+                {6'd1,4'd15 }:begin display_reg <= {8'b1,point[0]} ;                                en_w <= 0 ;end
+                default:
+		begin
+			display_reg <= {8'b1 , " "} ;
+			en_w <= 1 ;	
+			mode[3:0] <= dd ; 
+		end
+		endcase
+	end
+	none:
+	begin
+		en_w <= 0 ;
+		display_reg <= 0 ;
+		mode[3:0] <= dd ;
+	end
+	freq_sig:
+	begin
+		if(done_w == 1 ) begin                                                                                 			
+                	rst_w <= 1 ;
+                end else begin
+                	rst_w <= 0 ;
+                end
+                case(addr_db)
+		{6'd0,4'd0  }:begin display_reg <= {8'b1,"7"} ;                                     en_w <= 1 ;end
+		{6'd0,4'd1  }:begin display_reg <= {8'b1,"8"} ;                                     en_w <= 1 ;end
+		{6'd0,4'd2  }:begin display_reg <= {8'b1,"9"} ;                                     en_w <= 1 ;end
+		{6'd0,4'd3  }:begin display_reg <= {8'b1,"+"} ;                                     en_w <= 1 ;end
+		{6'd0,4'd4  }:begin display_reg <= {8'b1,8'hca} ;                                   en_w <= 1 ;end
+		{6'd0,4'd5  }:begin display_reg <= {8'b1,8'hfd} ;                                   en_w <= 1 ;end
+		{6'd0,4'd6  }:begin display_reg <= {8'b1,8'hd7} ;                                   en_w <= 1 ;end
+		{6'd0,4'd7  }:begin display_reg <= {8'b1,8'hd6} ;                                   en_w <= 1 ;end
+		{6'd0,4'd8  }:begin display_reg <= {8'b1,8'hd0} ;                                   en_w <= 1 ;end
+		{6'd0,4'd9  }:begin display_reg <= {8'b1,8'hc5} ;                                   en_w <= 1 ;end
+		{6'd0,4'd10 }:begin display_reg <= {8'b1,8'hba} ;                                   en_w <= 1 ;end
+		{6'd0,4'd11 }:begin display_reg <= {8'b1,8'hc5} ;                                   en_w <= 1 ;end
+		{6'd1,4'd0  }:begin display_reg <= {8'b1,"4"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd1  }:begin display_reg <= {8'b1,"5"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd2  }:begin display_reg <= {8'b1,"6"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd3  }:begin display_reg <= {8'b1,"-"} ;                                     en_w <= 1 ;end
+		{6'd1,4'd4  }:begin display_reg <= {8'b1,8'hd5} ;                                   en_w <= 1 ;end
+		{6'd1,4'd5  }:begin display_reg <= {8'b1,8'hfd} ;                                   en_w <= 1 ;end
+		{6'd1,4'd6  }:begin display_reg <= {8'b1,8'hd4} ;                                   en_w <= 1 ;end
+		{6'd1,4'd7  }:begin display_reg <= {8'b1,8'hda} ;                                   en_w <= 1 ;end
+		{6'd1,4'd8  }:begin display_reg <= {8'b1,8'hc9} ;                                   en_w <= 1 ;end
+		{6'd1,4'd9  }:begin display_reg <= {8'b1,8'hfa} ;                                   en_w <= 1 ;end
+		{6'd1,4'd10 }:begin display_reg <= {8'b1,8'hb3} ;                                   en_w <= 1 ;end
+		{6'd1,4'd11 }:begin display_reg <= {8'b1,8'hc9} ;                                   en_w <= 1 ;end
+		{6'd1,4'd12 }:begin display_reg <= {8'b1,point[2]} ;                                en_w <= 1 ;end     
+                {6'd1,4'd13 }:begin display_reg <= {8'b1,point[1]} ;                                en_w <= 1 ;end
+                {6'd1,4'd14 }:begin display_reg <= {8'b1,point[0]} ;                                en_w <= 1 ;end
+		{6'd2,4'd0  }:begin display_reg <= {8'b1,"1"} ;                                     en_w <= 1 ;end
+		{6'd2,4'd1  }:begin display_reg <= {8'b1,"2"} ;                                     en_w <= 1 ;end
+		{6'd2,4'd2  }:begin display_reg <= {8'b1,"3"} ;                                     en_w <= 1 ;end
+		{6'd2,4'd3  }:begin display_reg <= {8'b1,"X"} ;                                     en_w <= 1 ;end
+		{6'd3,4'd0  }:begin display_reg <= {8'b1,"x"} ;                                     en_w <= 1 ;end
+		{6'd3,4'd1  }:begin display_reg <= {8'b1,"b"} ;                                     en_w <= 1 ;end
+		{6'd3,4'd2  }:begin display_reg <= {8'b1,"a"} ;                                     en_w <= 1 ;end
+		{6'd3,4'd3  }:begin display_reg <= {8'b1,"r"} ;                                     en_w <= 1 ;end
+		{6'd3,4'd4  }:begin display_reg <= {8'b1,8'hc6};                                    en_w <= 1 ;end
+		{6'd3,4'd5  }:begin display_reg <= {8'b1,8'hb5};                                    en_w <= 1 ;end
+		{6'd3,4'd6  }:begin display_reg <= {8'b1,8'hc2};                                    en_w <= 1 ;end
+		{6'd3,4'd7  }:begin display_reg <= {8'b1,8'hca};                                    en_w <= 1 ;end
+		{6'd3,4'd8  }:begin display_reg <= {8'b1,":"};                                      en_w <= 1 ;end
+		{6'd3,4'd9  }:begin display_reg <= {8'b1,{7'b0,pbus[12]} + "0"} ;                   en_w <= 1 ;end       
+		{6'd3,4'd10 }:begin display_reg <= {8'b1,{4'b0,pbus[11:8]} + "0"} ;                 en_w <= 1 ;end       
+		{6'd3,4'd11 }:begin display_reg <= {8'b1,"0"} ;                                     en_w <= 1 ;end       
+		{6'd3,4'd12 }:begin display_reg <= {8'b1,"K"}  ;				    en_w <= 1 ;end
+		{6'd3,4'd13 }:begin display_reg <= {8'b1,"H"}  ;				    en_w <= 1 ;end
+		{6'd3,4'd14 }:begin display_reg <= {8'b1,"z"}  ;				    en_w <= 1 ;end
+                default:
+                begin
+			display_reg <= {8'b1 , " "} ;
+                	en_w <= 1 ;	
+                	mode[3:0] <= dd ; 
+                end
+                endcase
+	end
+	init:
+	begin	
+	end
+	default:
+	begin
+		display_reg <= 0 ;
+		counter <= 0 ;
+		en_w <= 0 ;
+		mode[3:0] <= dd ; 
+	end
+	endcase
+end
+endmodule

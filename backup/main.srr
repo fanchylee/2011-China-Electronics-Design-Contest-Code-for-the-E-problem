@@ -1,0 +1,1106 @@
+Synplicity HDL Compiler, version 1.0, Build 035R, built Oct 28 2008
+Copyright (C) 1994-2008, Synplicity Inc.  All Rights Reserved
+
+@N: CD720 :"D:\Synplicity\fpga_962\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@I:: "C:\Work\workspace\Xilinx\control_3\control_3\mdecoder.vhd"
+VHDL syntax check successful!
+# Thu Sep 01 11:22:58 2011
+
+###########################################################]
+@I::"D:\Synplicity\fpga_962\lib\xilinx\unisim.v"
+@I::"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\signal_m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\noise_m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_90m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_80m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_70m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_60m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v"
+@I:"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":"C:\Work\workspace\Xilinx\control_3\control_3\state.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\main.v"
+Verilog syntax check successful!
+# Thu Sep 01 11:23:00 2011
+
+###########################################################]
+@I::"D:\Synplicity\fpga_962\lib\xilinx\unisim.v"
+@I::"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\signal_m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\noise_m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_90m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_80m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_70m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dcm_60m.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v"
+@I:"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":"C:\Work\workspace\Xilinx\control_3\control_3\state.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v"
+@I::"C:\Work\workspace\Xilinx\control_3\control_3\main.v"
+Verilog syntax check successful!
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v":21:7:21:13|Synthesizing module bin2bcd
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Pruning Register BCD_t_56[3:0] 
+
+@A:"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Feedback mux created for signal BCD_o[39:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":21:7:21:14|Synthesizing module keyboard
+
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":111:14:111:20|Removing redundant assignment
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":127:15:127:21|Removing redundant assignment
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":143:16:143:22|Removing redundant assignment
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":159:17:159:23|Removing redundant assignment
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":1:7:1:13|Synthesizing module dis_ram
+
+@W: CG146 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":1:7:1:13|Creating black box for empty module dis_ram
+
+@W: CG133 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":20:12:20:17|No assignment to done_w
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":1:7:1:15|Synthesizing module dis_state
+
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 4 of mode
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 5 of mode
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 6 of mode
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 7 of mode
+@W: CG133 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":37:11:37:15|No assignment to point_3_
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register last_state[7:0] 
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register counter[7:0] 
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\noise_m.v":21:7:21:13|Synthesizing module noise_m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\signal_m.v":21:7:21:14|Synthesizing module signal_m
+
+@N: CG364 :"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v":569:7:569:10|Synthesizing module BUFG
+
+@N: CG364 :"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v":11732:7:11732:11|Synthesizing module IBUFG
+
+@N: CG364 :"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v":1188:7:1188:12|Synthesizing module DCM_SP
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dcm_90m.v":25:7:25:13|Synthesizing module dcm_90m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dcm_80m.v":25:7:25:13|Synthesizing module dcm_80m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dcm_70m.v":25:7:25:13|Synthesizing module dcm_70m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dcm_60m.v":25:7:25:13|Synthesizing module dcm_60m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":21:7:21:10|Synthesizing module main
+
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":455:11:455:15|Removing redundant assignment
+@W: CG360 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":22:105:22:114|No assignment to wire clk_signal
+
+@W: CG133 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":70:6:70:12|No assignment to state_w
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 14 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 15 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 16 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 17 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 18 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 19 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 20 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 21 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 22 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 23 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 24 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 25 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 26 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 27 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 28 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 29 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 30 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 31 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 32 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 33 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 34 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 35 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 36 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 37 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 38 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 39 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 44 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 45 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 46 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 47 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 48 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 49 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 50 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 51 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 52 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 53 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 54 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 55 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 56 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 57 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 58 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 59 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 60 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 61 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 62 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 63 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 64 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 65 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 66 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 67 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 68 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 69 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 70 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 71 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 72 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 73 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 74 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 75 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 76 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 77 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 78 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 79 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 80 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 81 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 82 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 83 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 84 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 85 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 86 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 87 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 88 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 89 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 90 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 91 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 92 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 93 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 94 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 95 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 96 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 97 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 98 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 99 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 100 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 101 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 102 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 103 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 104 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 105 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 106 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 107 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 108 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 109 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 110 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 111 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 112 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 113 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 114 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 115 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 116 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 117 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 118 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 119 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 120 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 121 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 122 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 123 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 124 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 125 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 126 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 127 of bus
+@W: CG133 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":159:5:159:13|No assignment to rst_noise
+@W: CL168 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":160:8:160:14|Pruning instance noise_m - not in use ...
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":274:0:274:5|Pruning Register counter_30k[8:0] 
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register counter_10m[8:0] 
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register clk_10m 
+
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 14 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 15 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 16 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 17 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 18 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 19 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 20 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 21 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 22 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 23 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 24 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 25 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 26 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 27 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 28 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 29 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 30 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 31 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 32 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 33 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 34 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 35 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 36 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 37 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 38 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 39 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 44 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 45 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 46 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 47 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 48 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 49 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 50 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 51 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 52 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 53 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 54 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 55 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 56 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 57 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 58 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 59 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 60 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 61 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 62 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 63 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 64 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 65 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 66 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 67 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 68 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 69 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 70 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 71 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 72 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 73 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 74 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 75 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 76 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 77 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 78 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 79 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 80 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 81 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 82 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 83 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 84 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 85 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 86 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 87 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 88 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 89 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 90 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 91 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 92 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 93 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 94 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 95 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 96 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 97 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 98 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 99 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 100 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 101 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 102 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 103 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 104 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 105 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 106 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 107 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 108 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 109 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 110 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 111 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 112 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 113 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 114 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 115 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 116 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 117 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 118 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 119 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 120 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 121 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 122 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 123 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 124 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 125 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 126 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 127 of input pbus of instance dis_state is floating
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":301:0:301:5|Pruning bit <31> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":301:0:301:5|Pruning bit <30> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":301:0:301:5|Pruning bit <29> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":301:0:301:5|Pruning bit <28> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":301:0:301:5|Pruning bit <27> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":301:0:301:5|Pruning bit <26> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":301:0:301:5|Pruning bit <25> of counter[31:0] - not in use ...
+
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[4] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[5] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[6] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[7] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[8] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[9] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[10] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[11] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[12] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[13] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[14] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[15] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[16] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[17] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[18] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[19] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[20] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[21] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[22] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[23] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[24] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[25] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[26] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[27] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[28] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[29] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[30] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Register bit in_bin2bcd[31] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Register bit state[3] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Register bit state[4] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Register bit state[5] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Register bit state[6] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Register bit state[7] is always 0, optimizing ...
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Pruning Register bit <7> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Pruning Register bit <6> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Pruning Register bit <5> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Pruning Register bit <4> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":440:0:440:5|Pruning Register bit <3> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <31> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <30> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <29> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <28> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <27> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <26> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <25> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <24> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <23> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <22> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <21> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <20> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <19> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <18> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <17> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <16> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <15> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <14> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <13> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <12> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <11> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <10> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <9> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <8> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <7> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <6> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <5> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Pruning Register bit <4> of in_bin2bcd[31:0] 
+
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":217:0:217:5|Register bit counter_100k[8] is always 0, optimizing ...
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":217:0:217:5|Pruning Register bit <8> of counter_100k[8:0] 
+
+@N: CL201 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":332:0:332:5|Trying to extract state machine for register bus
+Extracted state machine for register bus
+State machine has 17 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+   00100
+   00101
+   00110
+   00111
+   01000
+   01001
+   01010
+   01011
+   01100
+   01101
+   01110
+   01111
+   10000
+@W: CL156 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":170:9:170:16|*Input clk_signal to this expression [instance] has undriven bits which are being tied to 0 - a simulation mismatch is possible
+@W: CL157 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":22:105:22:114|*Output clk_signal has undriven bits - a simulation mismatch is possible 
+@W: CL138 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register 'mode' is only assigned 0 or its old value; the register will be removed
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[12] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[13] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[14] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[15] is always 0, optimizing ...
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <15> of display_reg[15:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <14> of display_reg[15:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <13> of display_reg[15:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <12> of display_reg[15:0] 
+
+@W: CL246 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":14:0:14:3|Input port bits 127 to 44 of pbus[127:0] are unused
+
+@W: CL246 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":14:0:14:3|Input port bits 35 to 20 of pbus[127:0] are unused
+
+@W: CL157 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|*Output mode has undriven bits - a simulation mismatch is possible 
+@W: CL159 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":10:0:10:10|Input display_clk is unused
+@A: CL153 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":20:12:20:17|*Unassigned bits of done_w have been referenced and are being tied to 0 - simulation mismatch possible
+# Thu Sep 01 11:23:04 2011
+
+###########################################################]
+@N: CD720 :"D:\Synplicity\fpga_962\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@I:: "C:\Work\workspace\Xilinx\control_3\control_3\mdecoder.vhd"
+VHDL syntax check successful!
+@N: CD630 :"C:\Work\workspace\Xilinx\control_3\control_3\mdecoder.vhd":28:7:28:15|Synthesizing work.mydecoder.behavioral 
+Post processing for work.mydecoder.behavioral
+# Thu Sep 01 11:23:05 2011
+
+###########################################################]
+Synplicity Netlist Filter, version 1.0, Build 035R, built Oct 28 2008
+@W:"C:\Work\workspace\Xilinx\control_3\control_3\main.v":131:8:131:16|Unbound component dis_ram of instance dis_ram_1 
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Sep 01 11:23:06 2011
+
+###########################################################]
+@END
+Process took 0h:00m:09s realtime, 0h:00m:06s cputime
+# Thu Sep 01 11:23:06 2011
+
+###########################################################]
+Synplicity Xilinx Technology Mapper, Version 9.6, Build 033R, Built Oct 30 2008 18:01:10
+Copyright (C) 1994-2008, Synplicity Inc.  All Rights Reserved
+Product Version Version 9.6.2
+Reading constraint file: C:\Work\workspace\Xilinx\control_3\control_3\main.sdc
+@N: MF249 |Running in 32-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading Xilinx I/O pad type table from file <D:\Synplicity\fpga_962\lib\xilinx\x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file <D:\Synplicity\fpga_962\lib\xilinx\gttype.txt> 
+@A:"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Initial value on register CNT[6:0] is non-zero.  This may prevent it from being packed into a Block RAM or DSP
+@W: FX474 |User specified initial value found in some of the sequential elements in the design. Applying an initial value to a register may not deliver the best synthesis results. For example, registers with initial values may be preserved and retiming/pipelining may not be performed. To improve synthesis results you may want to remove the register initialization from the RTL code 
+
+@W: MO111 :"c:\work\workspace\xilinx\control_3\control_3\dis_state.v":86:0:86:5|tristate driver mode_4 on net mode_4 has its enable tied to GND (module dis_state) 
+@W: MO111 :"c:\work\workspace\xilinx\control_3\control_3\dis_state.v":86:0:86:5|tristate driver mode_3 on net mode_3 has its enable tied to GND (module dis_state) 
+@W: MO111 :"c:\work\workspace\xilinx\control_3\control_3\dis_state.v":86:0:86:5|tristate driver mode_2 on net mode_2 has its enable tied to GND (module dis_state) 
+@W: MO111 :"c:\work\workspace\xilinx\control_3\control_3\dis_state.v":86:0:86:5|tristate driver mode_1 on net mode_1 has its enable tied to GND (module dis_state) 
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[8] has been reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[7] has been reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[6] has been reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[5] has been reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[4] has been reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[3] has been reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[2] has been reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\work\workspace\xilinx\control_3\control_3\main.v":234:0:234:5|Sequential instance counter_20m[1] has been reduced to a combinational gate by constant propagation
+@W: MO111 :|tristate driver dis_mode_t[7] on net dis_mode[7] has its enable tied to GND (module main) 
+@W: MO111 :|tristate driver dis_mode_t[6] on net dis_mode[6] has its enable tied to GND (module main) 
+@W: MO111 :|tristate driver dis_mode_t[5] on net dis_mode[5] has its enable tied to GND (module main) 
+@W: MO111 :|tristate driver dis_mode_t[4] on net dis_mode[4] has its enable tied to GND (module main) 
+@W: MO111 :"c:\work\workspace\xilinx\control_3\control_3\main.v":22:105:22:114|tristate driver clk_signal on net clk_signal has its enable tied to GND (module main) 
+Automatic dissolve at startup in view:work.main(verilog) of dcm_60m(dcm_60m)
+Automatic dissolve at startup in view:work.main(verilog) of dcm_70m(dcm_70m)
+Automatic dissolve at startup in view:work.main(verilog) of dcm_80m(dcm_80m)
+Automatic dissolve at startup in view:work.main(verilog) of dcm_90m(dcm_90m)
+@N: FX493 |Applying Initial value "00000000" on instance: signal_m.LFSR[7:0] 
+@N: FX493 |Applying Initial value "0001" on instance: four_four.col_o[3:0] 
+@N: FX493 |Applying Initial value "0000000" on instance: bin2bcd_converter.CNT[6:0] 
+@N: FX493 |Applying Initial value "0000000000000000000000000000000000000000" on instance: bin2bcd_converter.BCD_o[39:0] 
+@N: FX493 |Applying Initial value "00000000000000000000000000000000" on instance: bin2bcd_converter.BIN_INPUT[31:0] 
+@N: FX493 |Applying Initial value "000" on instance: state[2:0] 
+@N: FX493 |Applying Initial value "000000000" on instance: counter_20m[8:0] 
+@N: FX493 |Applying Initial value "0000" on instance: keycode_buf[3:0] 
+@N: MT206 |Autoconstrain Mode is ON
+Finished RTL optimizations (Time elapsed 0h:00m:01s; Memory used current: 96MB peak: 97MB)
+
+Encoding state machine work.main(verilog)-bus_1[16:0]
+original code -> new code
+   00000 -> 00000
+   00001 -> 00001
+   00010 -> 00010
+   00011 -> 00011
+   00100 -> 00100
+   00101 -> 00101
+   00110 -> 00110
+   00111 -> 00111
+   01000 -> 01000
+   01001 -> 01001
+   01010 -> 01010
+   01011 -> 01011
+   01100 -> 01100
+   01101 -> 01101
+   01110 -> 01110
+   01111 -> 01111
+   10000 -> 10000
+@N:"c:\work\workspace\xilinx\control_3\control_3\main.v":266:0:266:5|Found counter in view:work.main(verilog) inst counter_90k[8:0]
+@N:"c:\work\workspace\xilinx\control_3\control_3\main.v":258:0:258:5|Found counter in view:work.main(verilog) inst counter_80k[8:0]
+@N:"c:\work\workspace\xilinx\control_3\control_3\main.v":250:0:250:5|Found counter in view:work.main(verilog) inst counter_70k[8:0]
+@N:"c:\work\workspace\xilinx\control_3\control_3\main.v":242:0:242:5|Found counter in view:work.main(verilog) inst counter_60k[8:0]
+@N:"c:\work\workspace\xilinx\control_3\control_3\main.v":217:0:217:5|Found counter in view:work.main(verilog) inst counter_100k[7:0]
+@N:"c:\work\workspace\xilinx\control_3\control_3\keyboard.v":91:0:91:5|Found counter in view:work.keyboard(verilog) inst counter_1[19:0]
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\dis_state.v":86:0:86:5|Removing sequential instance display_reg_1[9] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N:"c:\work\workspace\xilinx\control_3\control_3\mdecoder.vhd":56:0:56:1|Found counter in view:work.mydecoder(behavioral) inst pos_counter[31:0]
+@N:"c:\work\workspace\xilinx\control_3\control_3\mdecoder.vhd":56:0:56:1|Found counter in view:work.mydecoder(behavioral) inst neg_counter[31:0]
+@N: MF179 :|Found 32 bit by 32 bit '==' comparator, 'un21_neg_counter'
+@N: MF179 :|Found 32 bit by 32 bit '==' comparator, 'un26_pos_counter'
+@N: MF179 :|Found 32 bit by 32 bit '==' comparator, 'un21_pos_counter'
+@N: MF179 :|Found 32 bit by 32 bit '==' comparator, 'un16_neg_counter'
+@N: MF179 :"c:\work\workspace\xilinx\control_3\control_3\mdecoder.vhd":118:7:118:53|Found 32 bit by 32 bit '==' comparator, 'un30_pos_counter'
+@N: MF179 :"c:\work\workspace\xilinx\control_3\control_3\mdecoder.vhd":127:7:127:53|Found 32 bit by 32 bit '==' comparator, 'un25_neg_counter'
+Dissolving instances of view:work.bin2bcd(verilog) before factorization cost=1226, pathcnt=1
+Dissolving instances of view:work.keyboard(verilog) before factorization cost=220, pathcnt=1
+Dissolving instances of view:work.dis_state(verilog) before factorization cost=1079, pathcnt=1
+Dissolving instances of view:work.signal_m(verilog) before factorization cost=82, pathcnt=1
+Dissolving instances of view:VhdlGenLib.CMP_EQ_main_w32(cell_level) before factorization cost=144, pathcnt=4
+Dissolving instances of view:VhdlGenLib.CMP_EQ_main_w32_const(cell_level) before factorization cost=142, pathcnt=1
+Dissolving instances of view:VhdlGenLib.CMP_EQ_main_w32_const_0(cell_level) before factorization cost=142, pathcnt=1
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[39] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[38] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[37] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[36] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[35] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[34] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[33] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[32] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[31] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[30] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[29] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[28] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[27] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[26] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[25] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[24] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[23] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[22] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[21] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[20] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[19] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[18] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[17] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[16] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[15] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[14] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[13] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[12] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[11] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[10] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[9] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD[8] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[39] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[38] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[37] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[36] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[35] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[34] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[33] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[32] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[31] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[30] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[29] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[28] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[27] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[26] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[25] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[24] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[23] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[22] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[21] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[20] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[19] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[18] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[17] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[16] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[15] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[14] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[13] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[12] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[11] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[10] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[9] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Removing sequential instance bin2bcd_converter.BCD_o[8] of view:UNILIB.FDCPE(PRIM) because there are no references to its outputs 
+Finished factoring (Time elapsed 0h:00m:07s; Memory used current: 104MB peak: 104MB)
+
+
+
+######### START OF GENERATED CLOCK OPTIMIZATION REPORT #########[
+
+================================================================
+		Instance:Pin		Generated Clock Optimization Status
+================================================================
+		en_bin2bcd						Not Done
+		keycode_buf[0]						Not Done
+		keycode_buf[1]						Not Done
+		keycode_buf[2]						Not Done
+		keycode_buf[3]						Not Done
+		clk_k_1[5]						Not Done
+		clk_k_1[4]						Not Done
+		clk_k_1[3]						Not Done
+		clk_k_1[2]						Not Done
+		clk_k_1[1]						Not Done
+		bus_1[4]						Not Done
+		bus_1[3]						Not Done
+		bus_1[2]						Not Done
+		bus_1[1]						Not Done
+		bus_1[0]						Not Done
+		counter[6]						Not Done
+		counter_3[3]						Not Done
+		counter_3[2]						Not Done
+		counter_3[1]						Not Done
+		counter_3[0]						Not Done
+		counter[24]						Not Done
+		bus[43]						Not Done
+		bus[42]						Not Done
+		bus[41]						Not Done
+		bus[40]						Not Done
+		in_bin2bcd[3]						Not Done
+		in_bin2bcd[2]						Not Done
+		in_bin2bcd[1]						Not Done
+		in_bin2bcd[0]						Not Done
+		state[2]						Not Done
+		state[1]						Not Done
+		state[0]						Not Done
+		clk_k_1[8]						Not Done
+		clk_k_1[7]						Not Done
+		clk_k_1[6]						Not Done
+		clk_20m						Not Done
+		clk_k_1[0]						Not Done
+		mdecode.first_pos_transition						Not Done
+		mdecode.first_neg_transition						Not Done
+		mdecode.current_bit						Not Done
+		mdecode.half_cycle1[31]						Not Done
+		mdecode.half_cycle1[30]						Not Done
+		mdecode.half_cycle1[29]						Not Done
+		mdecode.half_cycle1[28]						Not Done
+		mdecode.half_cycle1[27]						Not Done
+		mdecode.half_cycle1[26]						Not Done
+		mdecode.half_cycle1[25]						Not Done
+		mdecode.half_cycle1[24]						Not Done
+		mdecode.half_cycle1[23]						Not Done
+		mdecode.half_cycle1[22]						Not Done
+		mdecode.half_cycle1[21]						Not Done
+		mdecode.half_cycle1[20]						Not Done
+		mdecode.half_cycle1[19]						Not Done
+		mdecode.half_cycle1[18]						Not Done
+		mdecode.half_cycle1[17]						Not Done
+		mdecode.half_cycle1[16]						Not Done
+		mdecode.half_cycle1[15]						Not Done
+		mdecode.half_cycle1[14]						Not Done
+		mdecode.half_cycle1[13]						Not Done
+		mdecode.half_cycle1[12]						Not Done
+		mdecode.half_cycle1[11]						Not Done
+		mdecode.half_cycle1[10]						Not Done
+		mdecode.half_cycle1[9]						Not Done
+		mdecode.half_cycle1[8]						Not Done
+		mdecode.half_cycle1[7]						Not Done
+		mdecode.half_cycle1[6]						Not Done
+		mdecode.half_cycle1[5]						Not Done
+		mdecode.half_cycle1[4]						Not Done
+		mdecode.half_cycle1[3]						Not Done
+		mdecode.half_cycle1[2]						Not Done
+		mdecode.half_cycle1[1]						Not Done
+		mdecode.half_cycle1[0]						Not Done
+		mdecode.half_cycle2[31]						Not Done
+		mdecode.half_cycle2[30]						Not Done
+		mdecode.half_cycle2[29]						Not Done
+		mdecode.half_cycle2[28]						Not Done
+		mdecode.half_cycle2[27]						Not Done
+		mdecode.half_cycle2[26]						Not Done
+		mdecode.half_cycle2[25]						Not Done
+		mdecode.half_cycle2[24]						Not Done
+		mdecode.half_cycle2[23]						Not Done
+		mdecode.half_cycle2[22]						Not Done
+		mdecode.half_cycle2[21]						Not Done
+		mdecode.half_cycle2[20]						Not Done
+		mdecode.half_cycle2[19]						Not Done
+		mdecode.half_cycle2[18]						Not Done
+		mdecode.half_cycle2[17]						Not Done
+		mdecode.half_cycle2[16]						Not Done
+		mdecode.half_cycle2[15]						Not Done
+		mdecode.half_cycle2[14]						Not Done
+		mdecode.half_cycle2[13]						Not Done
+		mdecode.half_cycle2[12]						Not Done
+		mdecode.half_cycle2[11]						Not Done
+		mdecode.half_cycle2[10]						Not Done
+		mdecode.half_cycle2[9]						Not Done
+		mdecode.half_cycle2[8]						Not Done
+		mdecode.half_cycle2[7]						Not Done
+		mdecode.half_cycle2[6]						Not Done
+		mdecode.half_cycle2[5]						Not Done
+		mdecode.half_cycle2[4]						Not Done
+		mdecode.half_cycle2[3]						Not Done
+		mdecode.half_cycle2[2]						Not Done
+		mdecode.half_cycle2[1]						Not Done
+		mdecode.half_cycle2[0]						Not Done
+		mdecode.doubled_baseband						Not Done
+		mdecode.sync_signal						Not Done
+		mdecode.start_pos_count						Not Done
+		mdecode.start_neg_count						Not Done
+		signal_m.LFSR[0]						Not Done
+		dis_state.point_0_[7]						Done
+		dis_state.point_0_[6]						Done
+		dis_state.point_0_[5]						Done
+		dis_state.point_0_[4]						Done
+		dis_state.point_0_[3]						Done
+		dis_state.point_0_[2]						Done
+		dis_state.point_0_[1]						Done
+		dis_state.point_0_[0]						Done
+		dis_state.point_1_[7]						Done
+		dis_state.point_1_[6]						Done
+		dis_state.point_1_[5]						Done
+		dis_state.point_1_[4]						Done
+		dis_state.point_1_[3]						Done
+		dis_state.point_1_[2]						Done
+		dis_state.point_1_[1]						Done
+		dis_state.point_1_[0]						Done
+		dis_state.point_2_[7]						Done
+		dis_state.point_2_[6]						Done
+		dis_state.point_2_[5]						Done
+		dis_state.point_2_[4]						Done
+		dis_state.point_2_[3]						Done
+		dis_state.point_2_[2]						Done
+		dis_state.point_2_[1]						Done
+		dis_state.point_2_[0]						Done
+		four_four.col_o[0]						Not Done
+		four_four.col_o[1]						Not Done
+		four_four.col_o[2]						Not Done
+		four_four.col_o[3]						Not Done
+		four_four.keytrig						Not Done
+		four_four.curcol_row[3]						Not Done
+		four_four.curcol_row[2]						Not Done
+		four_four.curcol_row[1]						Not Done
+		four_four.curcol_row[0]						Not Done
+		four_four.keycode_o[3]						Not Done
+		four_four.keycode_o[2]						Not Done
+		four_four.keycode_o[1]						Not Done
+		four_four.keycode_o[0]						Not Done
+
+
+######### END OF GENERATED CLOCK OPTIMIZATION REPORT #########]
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:08s; Memory used current: 101MB peak: 105MB)
+
+@N: FX430 |Found 8 global buffers instantiated by user 
+
+Clock Buffers:
+@W: FX434 :|Because of resource limitations, clock buffer insertion could not be done on net clk_20m_c in view view:work.main(verilog) (fanout 68)
+@W: FX434 :"c:\work\workspace\xilinx\control_3\control_3\main.v":170:9:170:16|Because of resource limitations, clock buffer insertion could not be done on net signal_mout_c in view view:work.main(verilog) (fanout 66)
+@W: FX434 :|Because of resource limitations, clock buffer insertion could not be done on net clk_k_c[5] in view view:work.main(verilog) (fanout 33)
+@W: FX434 :"c:\work\workspace\xilinx\control_3\control_3\main.v":124:9:124:17|Because of resource limitations, clock buffer insertion could not be done on net keytrig in view view:work.main(verilog) (fanout 25)
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:09s; Memory used current: 101MB peak: 105MB)
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:09s; Memory used current: 101MB peak: 105MB)
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:14s; Memory used current: 103MB peak: 105MB)
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:14s; Memory used current: 103MB peak: 105MB)
+
+Finished preparing to map (Time elapsed 0h:00m:16s; Memory used current: 103MB peak: 105MB)
+
+Finished technology mapping (Time elapsed 0h:00m:17s; Memory used current: 105MB peak: 107MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:18s		    -5.96ns		1394 /       386
+   2		0h:00m:18s		    -5.96ns		1375 /       386
+   3		0h:00m:19s		    -5.96ns		1370 /       386
+   4		0h:00m:19s		    -5.96ns		1370 /       386
+   5		0h:00m:19s		    -5.96ns		1370 /       386
+   6		0h:00m:19s		    -5.96ns		1370 /       386
+   7		0h:00m:20s		    -5.96ns		1370 /       386
+------------------------------------------------------------
+
+Timing driven replication report
+@N: FX271 :"c:\work\workspace\xilinx\control_3\control_3\mdecoder.vhd":140:0:140:1|Instance "mdecode.half_cycle1[0]" with 7 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"c:\work\workspace\xilinx\control_3\control_3\mdecoder.vhd":173:0:173:1|Instance "mdecode.half_cycle2[0]" with 7 loads has been replicated 1 time(s) to improve timing 
+Added 2 Registers via timing driven replication
+Added 2 LUTs via timing driven replication
+
+Timing driven replication report
+No replication required.
+
+Timing driven replication report
+No replication required.
+
+Timing driven replication report
+No replication required.
+
+Timing driven replication report
+No replication required.
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:28s		    -5.87ns		1375 /       388
+   2		0h:00m:28s		    -5.87ns		1375 /       388
+   3		0h:00m:28s		    -5.87ns		1375 /       388
+Timing driven replication report
+No replication required.
+
+   4		0h:00m:29s		    -5.87ns		1375 /       388
+   5		0h:00m:29s		    -5.87ns		1375 /       388
+   6		0h:00m:30s		    -5.87ns		1375 /       388
+------------------------------------------------------------
+
+Timing driven replication report
+No replication required.
+
+Timing driven replication report
+No replication required.
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:31s		    -5.82ns		1385 /       388
+   2		0h:00m:31s		    -5.82ns		1385 /       388
+   3		0h:00m:31s		    -5.82ns		1385 /       388
+Timing driven replication report
+No replication required.
+
+   4		0h:00m:32s		    -5.82ns		1385 /       388
+   5		0h:00m:32s		    -5.82ns		1385 /       388
+   6		0h:00m:32s		    -5.82ns		1385 /       388
+------------------------------------------------------------
+
+Net buffering Report for view:work.main(verilog):
+No nets needed buffering.
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:33s; Memory used current: 106MB peak: 107MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\signal_m.v":33:0:33:5|Removing sequential instance signal_m.LFSR[6] of view:UNILIB.FDC(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\signal_m.v":33:0:33:5|Removing sequential instance signal_m.LFSR[5] of view:UNILIB.FDC(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\signal_m.v":33:0:33:5|Removing sequential instance signal_m.LFSR[4] of view:UNILIB.FDC(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\signal_m.v":33:0:33:5|Removing sequential instance signal_m.LFSR[3] of view:UNILIB.FDC(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\signal_m.v":33:0:33:5|Removing sequential instance signal_m.LFSR[2] of view:UNILIB.FDC(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\signal_m.v":33:0:33:5|Removing sequential instance signal_m.LFSR[1] of view:UNILIB.FDC(PRIM) because there are no references to its outputs 
+@N: BN116 :"c:\work\workspace\xilinx\control_3\control_3\signal_m.v":33:0:33:5|Removing sequential instance signal_m.LFSR[7] of view:UNILIB.FDC(PRIM) because there are no references to its outputs 
+Finished restoring hierarchy (Time elapsed 0h:00m:44s; Memory used current: 106MB peak: 107MB)
+
+Writing Analyst data base C:\Work\workspace\Xilinx\control_3\control_3\main.srm
+@N: BN225 |Writing default property annotation file C:\Work\workspace\Xilinx\control_3\control_3\main.map.
+Finished Writing Netlist Databases (Time elapsed 0h:00m:46s; Memory used current: 105MB peak: 107MB)
+
+Writing EDIF Netlist and constraint files
+Reading Xilinx net attributes from file <D:\Synplicity\fpga_962\lib\xilinx\netattr.txt> 
+Version 9.6.2
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:47s; Memory used current: 105MB peak: 107MB)
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:47s; Memory used current: 104MB peak: 107MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:47s; Memory used current: 104MB peak: 107MB)
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:47s; Memory used current: 104MB peak: 107MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:47s; Memory used current: 104MB peak: 107MB)
+
+Found clock main|clk_ex with period 0.09ns 
+Found clock main|clk_k_inferred_clock[0] with period 1.45ns 
+Found clock main|clk_k_inferred_clock[8] with period 1.45ns 
+Found clock main|clk_k_inferred_clock[4] with period 1.45ns 
+Found clock main|clk_k_inferred_clock[2] with period 1.49ns 
+Found clock main|clk_20m_inferred_clock with period 5.70ns 
+Found clock main|counter_inferred_clock[24] with period 3.07ns 
+Found clock main|clk_k_inferred_clock[5] with period 5.02ns 
+Found clock keyboard|keytrig_inferred_clock with period 5.19ns 
+Found clock signal_m|LFSR_inferred_clock[0] with period 435.67ns 
+Found clock main|dcm_90m.CLKFX_BUF_derived_clock with period 428.23ns 
+Found clock main|dcm_90m.CLK0_BUF_derived_clock with period 428.23ns 
+Found clock main|dcm_80m.CLKFX_BUF_derived_clock with period 428.23ns 
+Found clock main|dcm_80m.CLK0_BUF_derived_clock with period 428.23ns 
+Found clock main|dcm_70m.CLKFX_BUF_derived_clock with period 428.23ns 
+Found clock main|dcm_70m.CLK0_BUF_derived_clock with period 428.23ns 
+Found clock main|dcm_60m.CLKFX_BUF_derived_clock with period 428.23ns 
+Found clock main|dcm_60m.CLK0_BUF_derived_clock with period 428.23ns 
+Found clock main|mdecode.sync_inferred_clock with period 0.21ns 
+@W: MT246 :"c:\work\workspace\xilinx\control_3\control_3\main.v":131:8:131:16|Blackbox dis_ram is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Sep 01 11:24:03 2011
+#
+
+
+Top view:               main
+Requested Frequency:    2.3 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    C:\Work\workspace\Xilinx\control_3\control_3\main.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.708
+
+                                         Requested     Estimated     Requested     Estimated                 Clock                          Clock                 
+Starting Clock                           Frequency     Frequency     Period        Period        Slack       Type                           Group                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+keyboard|keytrig_inferred_clock          192.7 MHz     116.2 MHz     5.190         8.606         -1.708      inferred                       Autoconstr_clkgroup_1 
+main|clk_20m_inferred_clock              175.5 MHz     149.1 MHz     5.699         6.705         -1.006      inferred                       Autoconstr_clkgroup_4 
+main|clk_k_inferred_clock[0]             688.8 MHz     585.5 MHz     1.452         1.708         -0.256      inferred                       Autoconstr_clkgroup_10
+main|clk_k_inferred_clock[2]             669.2 MHz     568.8 MHz     1.494         1.758         -0.264      inferred                       Autoconstr_clkgroup_7 
+main|clk_k_inferred_clock[4]             688.8 MHz     585.5 MHz     1.452         1.708         -0.256      inferred                       Autoconstr_clkgroup_8 
+main|clk_k_inferred_clock[5]             199.2 MHz     178.5 MHz     5.020         5.603         -0.583      inferred                       Autoconstr_clkgroup_2 
+main|clk_k_inferred_clock[8]             688.8 MHz     585.5 MHz     1.452         1.708         -0.256      inferred                       Autoconstr_clkgroup_9 
+main|dcm_60m.CLK0_BUF_derived_clock      2.3 MHz       113.9 MHz     428.230       8.783         210.557     derived (from main|clk_ex)     Autoconstr_clkgroup_0 
+main|dcm_60m.CLKFX_BUF_derived_clock     2.3 MHz       213.0 MHz     428.230       4.696         423.534     derived (from main|clk_ex)     Autoconstr_clkgroup_0 
+main|dcm_70m.CLKFX_BUF_derived_clock     2.3 MHz       213.0 MHz     428.230       4.696         423.534     derived (from main|clk_ex)     Autoconstr_clkgroup_0 
+main|dcm_80m.CLKFX_BUF_derived_clock     2.3 MHz       213.0 MHz     428.230       4.696         423.534     derived (from main|clk_ex)     Autoconstr_clkgroup_0 
+main|dcm_90m.CLKFX_BUF_derived_clock     2.3 MHz       213.0 MHz     428.230       4.696         423.534     derived (from main|clk_ex)     Autoconstr_clkgroup_0 
+signal_m|LFSR_inferred_clock[0]          2.3 MHz       40.6 MHz      435.671       24.624        205.523     inferred                       Autoconstr_clkgroup_5 
+==================================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                      |    rise  to  rise     |    fall  to  fall     |    rise  to  fall     |    fall  to  rise   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                              Ending                                |  constraint  slack    |  constraint  slack    |  constraint  slack    |  constraint  slack  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+keyboard|keytrig_inferred_clock       keyboard|keytrig_inferred_clock       |  5.190       1.502    |  5.190       -0.916   |  2.595       -1.708   |  No paths    -      
+keyboard|keytrig_inferred_clock       main|dcm_60m.CLK0_BUF_derived_clock   |  Diff grp    -        |  Diff grp    -        |  Diff grp    -        |  Diff grp    -      
+main|clk_k_inferred_clock[5]          keyboard|keytrig_inferred_clock       |  Diff grp    -        |  No paths    -        |  No paths    -        |  No paths    -      
+main|clk_k_inferred_clock[5]          main|clk_k_inferred_clock[5]          |  5.020       -0.583   |  No paths    -        |  No paths    -        |  No paths    -      
+main|clk_k_inferred_clock[5]          main|dcm_60m.CLK0_BUF_derived_clock   |  No paths    -        |  No paths    -        |  Diff grp    -        |  No paths    -      
+main|clk_20m_inferred_clock           main|clk_20m_inferred_clock           |  5.699       -1.006   |  No paths    -        |  No paths    -        |  No paths    -      
+main|clk_20m_inferred_clock           signal_m|LFSR_inferred_clock[0]       |  Diff grp    -        |  No paths    -        |  Diff grp    -        |  No paths    -      
+signal_m|LFSR_inferred_clock[0]       main|clk_20m_inferred_clock           |  Diff grp    -        |  No paths    -        |  No paths    -        |  Diff grp    -      
+signal_m|LFSR_inferred_clock[0]       signal_m|LFSR_inferred_clock[0]       |  435.671     430.673  |  435.671     430.673  |  217.835     205.523  |  217.835     205.523
+main|dcm_90m.CLKFX_BUF_derived_clock  main|dcm_90m.CLKFX_BUF_derived_clock  |  428.230     423.534  |  No paths    -        |  No paths    -        |  No paths    -      
+main|dcm_80m.CLKFX_BUF_derived_clock  main|dcm_80m.CLKFX_BUF_derived_clock  |  428.230     423.534  |  No paths    -        |  No paths    -        |  No paths    -      
+main|dcm_70m.CLKFX_BUF_derived_clock  main|dcm_70m.CLKFX_BUF_derived_clock  |  428.230     423.534  |  No paths    -        |  No paths    -        |  No paths    -      
+main|dcm_60m.CLK0_BUF_derived_clock   main|dcm_60m.CLK0_BUF_derived_clock   |  428.230     421.709  |  428.230     419.447  |  214.115     212.407  |  214.115     210.557
+main|dcm_60m.CLKFX_BUF_derived_clock  main|dcm_60m.CLKFX_BUF_derived_clock  |  428.230     423.534  |  No paths    -        |  No paths    -        |  No paths    -      
+main|clk_k_inferred_clock[2]          main|clk_k_inferred_clock[2]          |  1.494       -0.264   |  No paths    -        |  No paths    -        |  No paths    -      
+main|clk_k_inferred_clock[4]          main|clk_k_inferred_clock[4]          |  1.452       -0.256   |  No paths    -        |  No paths    -        |  No paths    -      
+main|clk_k_inferred_clock[8]          main|clk_k_inferred_clock[8]          |  1.452       -0.256   |  No paths    -        |  No paths    -        |  No paths    -      
+main|clk_k_inferred_clock[0]          main|clk_k_inferred_clock[0]          |  1.452       -0.256   |  No paths    -        |  No paths    -        |  No paths    -      
+==========================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for main 
+
+Mapping to part: xc3s500epq208-5
+Cell usage:
+DCM_SP          4 uses
+FD              64 uses
+FDC             78 uses
+FDCE            75 uses
+FDCE_1          33 uses
+FDE             15 uses
+FDE_1           57 uses
+FDP             3 uses
+FDPE            2 uses
+FDP_1           1 use
+FDR             1 use
+FDRE            20 uses
+FDRE_1          4 uses
+FDRS            1 use
+FDSE_1          1 use
+FD_1            25 uses
+GND             9 uses
+MULT_AND        6 uses
+MUXCY           15 uses
+MUXCY_L         688 uses
+MUXF5           2 uses
+VCC             2 uses
+XORCY           398 uses
+dis_ram         1 use
+LUT1            128 uses
+LUT2            603 uses
+LUT3            154 uses
+LUT4            485 uses
+
+I/O ports: 46
+I/O primitives: 46
+IBUF           5 uses
+IBUFG          1 use
+OBUF           39 uses
+OBUFT          1 use
+
+BUFG           8 uses
+
+I/O Register bits:                  1
+Register bits not including I/Os:   379 (4%)
+
+Global Clock Buffers: 8 of 24 (33%)
+
+Total load per clock:
+   keyboard|keytrig_inferred_clock: 17
+   main|dcm_80m.CLKFX_BUF_derived_clock: 1
+   main|clk_k_inferred_clock[2]: 3
+   main|dcm_90m.CLKFX_BUF_derived_clock: 1
+   main|dcm_70m.CLKFX_BUF_derived_clock: 1
+   main|dcm_60m.CLKFX_BUF_derived_clock: 1
+   main|dcm_60m.CLK0_BUF_derived_clock: 1
+   main|clk_k_inferred_clock[4]: 3
+   main|clk_k_inferred_clock[8]: 3
+   main|clk_k_inferred_clock[0]: 3
+   main|clk_k_inferred_clock[5]: 3
+   main|clk_20m_inferred_clock: 3
+   signal_m|LFSR_inferred_clock[0]: 41
+   main|mdecode.sync_inferred_clock: 3
+
+Mapping Summary:
+Total  LUTs: 1370 (14%)
+
+Mapper successful!
+Process took 0h:00m:51s realtime, 0h:00m:48s cputime
+# Thu Sep 01 11:24:04 2011
+
+###########################################################]

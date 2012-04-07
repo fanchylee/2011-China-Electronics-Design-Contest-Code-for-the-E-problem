@@ -1,0 +1,56 @@
+Running: D:\Xilinx\12.3\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Work/workspace/Xilinx/control_3/control_3/main_isim_beh.exe -prj C:/Work/workspace/Xilinx/control_3/control_3/main_beh.prj work.main work.glbl 
+ISim M.70d (signature 0x36e8438f)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/signal_m.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/noise_m.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/keyboard.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/dcm_90m.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/dcm_80m.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/dcm_70m.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/dcm_60m.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/dis_state.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/dis_ram_wrapper.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/bin2bcd.v\" into library work
+Analyzing Verilog file \"C:/Work/workspace/Xilinx/control_3/control_3/main.v\" into library work
+Analyzing Verilog file \"D:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Parsing VHDL file "C:/Work/workspace/Xilinx/control_3/control_3/mdecoder.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Work/workspace/Xilinx/control_3/control_3/main.v" Line 195: Port CLKIN_IBUFG_OUT is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 60632 KB
+Fuse CPU Usage: 342 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling module bin2bcd
+Compiling module keyboard
+Compiling module dis_ram
+Compiling module dis_state
+Compiling module noise_m
+Compiling module signal_m
+Compiling module BUFG
+Compiling module IBUFG
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKFX_DIVIDE=5,CLKFX_MULT...
+Compiling module dcm_90m
+Compiling module DCM_SP(CLKFX_DIVIDE=5,CLKFX_MULT...
+Compiling module dcm_80m
+Compiling module DCM_SP(CLKFX_DIVIDE=5,CLKFX_MULT...
+Compiling module dcm_70m
+Compiling module DCM_SP(CLKFX_DIVIDE=5,CLKFX_MULT...
+Compiling module dcm_60m
+Compiling module main
+Compiling module glbl
+Compiling architecture behavioral of entity mydecoder [mydecoder_default]
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Compiled 22 Verilog Units
+Built simulation executable C:/Work/workspace/Xilinx/control_3/control_3/main_isim_beh.exe
+Fuse Memory Usage: 70172 KB
+Fuse CPU Usage: 1046 ms

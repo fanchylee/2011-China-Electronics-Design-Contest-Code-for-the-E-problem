@@ -1,0 +1,468 @@
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v":21:7:21:13|Synthesizing module bin2bcd
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Pruning Register BCD_t_56[3:0] 
+
+@A:"C:\Work\workspace\Xilinx\control_3\control_3\bin2bcd.v":50:0:50:5|Feedback mux created for signal BCD_o[39:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":21:7:21:14|Synthesizing module keyboard
+
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":111:14:111:20|Removing redundant assignment
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":127:15:127:21|Removing redundant assignment
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":143:16:143:22|Removing redundant assignment
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\keyboard.v":159:17:159:23|Removing redundant assignment
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":1:7:1:13|Synthesizing module dis_ram
+
+@W: CG146 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":1:7:1:13|Creating black box for empty module dis_ram
+
+@W: CG133 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":20:12:20:17|No assignment to done_w
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":1:7:1:15|Synthesizing module dis_state
+
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 4 of mode
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 5 of mode
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 6 of mode
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":20:17:20:20|No assignment to bit 7 of mode
+@W: CG133 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":37:11:37:15|No assignment to point_3_
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register last_state[7:0] 
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register counter[7:0] 
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\noise_m.v":21:7:21:13|Synthesizing module noise_m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\signal_m.v":21:7:21:14|Synthesizing module signal_m
+
+@N: CG364 :"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v":569:7:569:10|Synthesizing module BUFG
+
+@N: CG364 :"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v":11732:7:11732:11|Synthesizing module IBUFG
+
+@N: CG364 :"D:\Synplicity\fpga_962\bin\..\lib\xilinx\unisim.v":1188:7:1188:12|Synthesizing module DCM_SP
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dcm_90m.v":25:7:25:13|Synthesizing module dcm_90m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dcm_80m.v":25:7:25:13|Synthesizing module dcm_80m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\dcm_70m.v":25:7:25:13|Synthesizing module dcm_70m
+
+@N: CG364 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":21:7:21:10|Synthesizing module main
+
+@N: CG179 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":453:11:453:15|Removing redundant assignment
+@W: CG133 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":70:6:70:12|No assignment to state_w
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 14 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 15 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 16 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 17 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 18 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 19 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 20 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 21 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 22 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 23 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 24 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 25 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 26 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 27 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 28 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 29 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 30 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 31 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 32 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 33 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 34 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 35 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 36 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 37 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 38 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 39 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 44 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 45 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 46 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 47 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 48 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 49 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 50 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 51 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 52 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 53 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 54 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 55 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 56 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 57 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 58 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 59 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 60 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 61 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 62 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 63 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 64 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 65 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 66 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 67 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 68 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 69 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 70 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 71 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 72 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 73 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 74 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 75 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 76 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 77 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 78 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 79 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 80 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 81 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 82 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 83 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 84 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 85 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 86 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 87 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 88 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 89 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 90 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 91 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 92 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 93 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 94 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 95 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 96 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 97 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 98 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 99 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 100 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 101 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 102 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 103 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 104 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 105 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 106 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 107 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 108 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 109 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 110 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 111 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 112 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 113 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 114 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 115 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 116 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 117 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 118 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 119 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 120 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 121 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 122 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 123 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 124 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 125 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 126 of bus
+@W: CG134 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":80:13:80:15|No assignment to bit 127 of bus
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 14 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 15 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 16 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 17 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 18 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 19 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 20 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 21 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 22 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 23 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 24 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 25 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 26 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 27 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 28 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 29 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 30 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 31 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 32 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 33 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 34 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 35 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 36 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 37 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 38 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 39 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 44 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 45 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 46 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 47 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 48 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 49 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 50 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 51 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 52 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 53 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 54 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 55 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 56 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 57 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 58 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 59 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 60 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 61 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 62 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 63 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 64 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 65 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 66 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 67 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 68 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 69 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 70 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 71 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 72 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 73 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 74 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 75 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 76 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 77 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 78 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 79 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 80 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 81 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 82 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 83 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 84 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 85 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 86 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 87 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 88 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 89 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 90 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 91 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 92 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 93 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 94 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 95 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 96 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 97 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 98 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 99 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 100 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 101 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 102 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 103 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 104 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 105 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 106 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 107 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 108 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 109 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 110 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 111 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 112 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 113 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 114 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 115 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 116 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 117 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 118 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 119 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 120 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 121 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 122 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 123 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 124 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 125 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 126 of input pbus of instance dis_state is floating
+@W: CL245 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":143:10:143:18|Bit 127 of input pbus of instance dis_state is floating
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning bit <31> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning bit <30> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning bit <29> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning bit <28> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning bit <27> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning bit <26> of counter[31:0] - not in use ...
+
+@W: CL170 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning bit <25> of counter[31:0] - not in use ...
+
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Register bit state[1] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Register bit state[3] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Register bit state[4] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Register bit state[5] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Register bit state[6] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Register bit state[7] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Register bit en_signal is always 1, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[4] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[5] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[6] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[7] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[8] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[9] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[10] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[11] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[12] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[13] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[14] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[15] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[16] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[17] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[18] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[19] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[20] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[21] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[22] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[23] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[24] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[25] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[26] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[27] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[28] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[29] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[30] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Register bit in_bin2bcd[31] is always 0, optimizing ...
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <31> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <30> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <29> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <28> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <27> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <26> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <25> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <24> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <23> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <22> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <21> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <20> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <19> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <18> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <17> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <16> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <15> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <14> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <13> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <12> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <11> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <10> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <9> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <8> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <7> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <6> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <5> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register bit <4> of in_bin2bcd[31:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Pruning Register bit <7> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Pruning Register bit <6> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Pruning Register bit <5> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Pruning Register bit <4> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Pruning Register bit <3> of state[7:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Pruning Register bit <1> of state[7:0] 
+
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Register bit en_bin2bcd is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":216:0:216:5|Register bit counter_100k[8] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":216:0:216:5|Register bit counter_100k[9] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[2] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[3] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[4] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[5] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[6] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[7] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[8] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Register bit counter_10m[9] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":250:0:250:5|Register bit counter_70k[9] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":258:0:258:5|Register bit counter_80k[9] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":266:0:266:5|Register bit counter_90k[9] is always 0, optimizing ...
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":266:0:266:5|Pruning Register bit <9> of counter_90k[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":258:0:258:5|Pruning Register bit <9> of counter_80k[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":250:0:250:5|Pruning Register bit <9> of counter_70k[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <9> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <8> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <7> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <6> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <5> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <4> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <3> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":225:0:225:5|Pruning Register bit <2> of counter_10m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":216:0:216:5|Pruning Register bit <9> of counter_100k[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":216:0:216:5|Pruning Register bit <8> of counter_100k[9:0] 
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":438:0:438:5|Pruning Register counter_3[3:0] 
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":296:0:296:5|Pruning Register rst_bin2bcd 
+
+@W: CL169 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":330:0:330:5|Pruning Register in_bin2bcd[3:0] 
+
+@W: CL168 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":116:8:116:24|Pruning instance bin2bcd_converter - not in use ...
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <9> of counter_20m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <8> of counter_20m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <7> of counter_20m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <6> of counter_20m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <5> of counter_20m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <4> of counter_20m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <3> of counter_20m[9:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\main.v":234:0:234:5|Pruning Register bit <2> of counter_20m[9:0] 
+
+@W: CL138 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register 'mode' is only assigned 0 or its old value; the register will be removed
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[12] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[13] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[14] is always 0, optimizing ...
+@W: CL189 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Register bit display_reg[15] is always 0, optimizing ...
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <15> of display_reg[15:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <14> of display_reg[15:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <13> of display_reg[15:0] 
+
+@W: CL171 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|Pruning Register bit <12> of display_reg[15:0] 
+
+@W: CL246 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":14:0:14:3|Input port bits 127 to 44 of pbus[127:0] are unused
+
+@W: CL246 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":14:0:14:3|Input port bits 35 to 20 of pbus[127:0] are unused
+
+@W: CL157 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":86:0:86:5|*Output mode has undriven bits - a simulation mismatch is possible 
+@W: CL159 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_state.v":10:0:10:10|Input display_clk is unused
+@A: CL153 :"C:\Work\workspace\Xilinx\control_3\control_3\dis_ram_wrapper.v":20:12:20:17|*Unassigned bits of done_w have been referenced and are being tied to 0 - simulation mismatch possible
